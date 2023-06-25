@@ -7,5 +7,13 @@
   "singleQuote": true,
   "endOfLine": "lf",
   "bracketSameLine": true,
-  "quoteProps": "preserve"
+  "quoteProps": "preserve",
+  "overrides": [
+    {
+      "files": "*.yml",
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
 }

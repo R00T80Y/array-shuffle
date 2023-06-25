@@ -1,5 +1,5 @@
 /**
- * Претасовывает элементы в массиве по алгоритму "Fisher–Yates Shuffle" https://bost.ocks.org/mike/shuffle/
+ * Перетасовывает элементы в массиве по алгоритму "Fisher–Yates Shuffle"
  *
  * @category Array Functions
  * @example shuffle([1, undefined, NaN, 2, null, 3, 0])

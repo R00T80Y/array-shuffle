@@ -1,5 +1,5 @@
 /**
- * Претасовывает элементы в массиве по алгоритму "Fisher–Yates Shuffle" https://bost.ocks.org/mike/shuffle/
+ * Перетасовывает элементы в массиве по алгоритму "Fisher–Yates Shuffle"
  *
  * @category Array Functions
  * @example shuffle([1, undefined, NaN, 2, null, 3, 0])
@@ -18,16 +18,17 @@ function shuffle<T>(array: T[]): T[] {
 
   let counter = array.length;
 
-  // Пока в массиве имеются элементы, проходимся по массиву с конца к началу
+  // Пока в массиве имеются элементы,
+  // перебераем элементы в массиву с конца к началу
   while (counter > 0) {
-    // Выбераем случайный индекс от 0 до counter(не включая числа counter)
+    // Выбираем случайный индекс от 0 до counter(не включая counter)
     // counter с каждым проходом цикла будет на один меньше
     const index = Math.floor(Math.random() * counter);
 
     // Уменьшить счетчик на 1
     counter--;
 
-    // И меняем местами текуший элемент со случайным
+    // Меняем местами текущий элемент со случайным
     const temp = array[counter];
     array[counter] = array[index];
     array[index] = temp;

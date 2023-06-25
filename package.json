@@ -1,4 +1,5 @@
 {
+  "private": false,
   "name": "@r00t80y/array-shuffle",
   "description": "Array shuffle",
   "author": "nnu17ip1y <nnu17ip1y@yahoo.com> (https://github.com/R00T80Y)",

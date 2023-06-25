@@ -3,7 +3,7 @@
   "name": "@r00t80y/array-shuffle",
   "description": "Array shuffle",
   "author": "nnu17ip1y <nnu17ip1y@yahoo.com> (https://github.com/R00T80Y)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "ISC",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

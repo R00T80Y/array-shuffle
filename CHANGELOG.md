@@ -1,5 +1,11 @@
 # @r00t80y/array-shuffle
 
+## 0.0.5
+
+### Patch Changes
+
+- 7f5ed12: install husky hook
+
 ## 0.0.4
 
 ### Patch Changes

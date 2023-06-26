@@ -1,4 +1,5 @@
 name: Publish
+
 on:
   push:
     branches:
@@ -10,16 +11,21 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Use PNPM
+        uses: pnpm/action-setup@v2
         with:
           version: 7
-      - uses: actions/setup-node@v3
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: "pnpm"
 
-      - name: Install Dependencies
+      - name: Install NPM Dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Build the package
@@ -35,3 +41,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_ENV: "production"

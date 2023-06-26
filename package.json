@@ -12,12 +12,15 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "workspaces": [
+    "packages/**"
+  ],
   "scripts": {
-    "dev": "vitest",
-    "test": "vitest run",
-    "build": "tsup",
-    "lint": "tsc",
-    "ci": "pnpm lint && pnpm test && pnpm build",
+    "dev": "pnpm --filter='./packages/shuffle' dev",
+    "test": "pnpm --filter='./packages/shuffle' test",
+    "build": "pnpm --filter='./packages/shuffle' build",
+    "lint": "pnpm --filter='./packages/shuffle' lint",
+    "ci": "pnpm --filter='./packages/shuffle' ci",
     "release": "pnpm ci && changeset publish",
     "prepare": "husky install"
   },
@@ -28,8 +31,7 @@
     "husky": "^8.0.3",
     "prettier": "^2.8.8",
     "pretty-quick": "^3.1.3",
-    "tsup": "^7.0.0",
-    "typescript": "^5.1.3",
-    "vitest": "^0.32.2"
-  }
+    "@repo/prettier-config": "workspace:*"
+  },
+  "packageManager": "pnpm@7.15.0"
 }

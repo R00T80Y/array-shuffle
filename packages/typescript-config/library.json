@@ -5,11 +5,10 @@
   "compilerOptions": {
     "module": "ESNext",
     "target": "ES2015",
+    "lib": ["ES2015"],
     "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noUncheckedIndexedAccess": true
-  },
-  "include": ["src/index.ts"],
-  "exclude": ["dist", "build", "node_modules"]
+  }
 }

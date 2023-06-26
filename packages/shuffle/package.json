@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "@repo/shuffle",
+  "name": "shuffle",
   "description": "Array shuffle",
   "author": "nnu17ip1y <nnu17ip1y@yahoo.com> (https://github.com/R00T80Y)",
   "version": "0.0.7",

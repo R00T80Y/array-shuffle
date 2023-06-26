@@ -3,10 +3,10 @@
  *
  * @category Array Functions
  * @example shuffle([1, undefined, NaN, 2, null, 3, 0])
- * @version 0.0.1
+ * @version 0.0.2
  * @see https://bost.ocks.org/mike/shuffle/
  */
-function shuffle<T>(array: T[]): T[] {
+function shuffle<T extends unknown[]>(array: T): T {
   if (!Array.isArray(array)) {
     return array;
   }

@@ -1,9 +1,7 @@
 {
-  "private": false,
   "name": "shuffle",
   "description": "Array shuffle",
   "author": "nnu17ip1y <nnu17ip1y@yahoo.com> (https://github.com/R00T80Y)",
-  "version": "0.0.7",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

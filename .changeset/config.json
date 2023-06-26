@@ -1,6 +1,9 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
-  "changelog": "@changesets/cli/changelog",
+  "changelog": [
+    "@changesets/cli/changelog",
+    { "repo": "https://github.com/R00T80Y/array-shuffle" }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [],

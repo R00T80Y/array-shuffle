@@ -1,5 +1,11 @@
 # @repo/prettier-config
 
+## 1.0.0
+
+### Major Changes
+
+- 8e5fad5: changeset
+
 ## 0.1.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "@r00t80y/array-shuffle",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "private": false,
   "license": "MIT",
   "description": "Array shuffle",

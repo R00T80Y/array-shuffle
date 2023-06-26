@@ -1,5 +1,8 @@
 {
   "name": "shuffle",
+  "version": "0.0.0",
+  "private": false,
+  "license": "MIT",
   "description": "Array shuffle",
   "author": "nnu17ip1y <nnu17ip1y@yahoo.com> (https://github.com/R00T80Y)",
   "main": "./dist/index.js",

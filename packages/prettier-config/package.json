@@ -1,6 +1,7 @@
 {
-  "name": "@repo/prettier-config",
-  "version": "0.1.1",
+  "private": false,
+  "name": "@r00t80y/prettier-config",
+  "version": "0.0.1",
   "license": "MIT",
   "author": "nnu17ip1y <nnu17ip1y@yahoo.com> (https://github.com/R00T80Y)",
   "files": [
@@ -9,9 +10,6 @@
   "main": "index.js",
   "publishConfig": {
     "access": "public"
-  },
-  "peerDependencies": {
-    "prettier": ">=2.8.3"
   },
   "devDependencies": {
     "prettier": ">=2.8.3",

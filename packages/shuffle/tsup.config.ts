@@ -8,7 +8,6 @@ export default defineConfig((options: Options) => ({
   dts: true,
   minify: false,
   clean: true,
-  outDir: './../../dist',
   external: [],
   ...options,
 }));

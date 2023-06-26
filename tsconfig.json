@@ -1,9 +1,15 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Library",
+  "extends": "./base.json",
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "noEmit": true
-  }
+    "module": "ESNext",
+    "target": "ES2015",
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": ["src/index.ts"],
+  "exclude": ["dist", "build", "node_modules"]
 }

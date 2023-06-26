@@ -5,13 +5,17 @@
   "author": "nnu17ip1y <nnu17ip1y@yahoo.com> (https://github.com/R00T80Y)",
   "version": "0.0.7",
   "license": "MIT",
+  "keywords": [
+    "array",
+    "shuffle"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vitest",
     "test": "vitest run",
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "build": "tsup",
     "lint": "tsc",
     "ci": "pnpm lint && pnpm test && pnpm build",
     "release": "pnpm ci && changeset publish",

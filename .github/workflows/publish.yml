@@ -19,12 +19,20 @@ jobs:
           node-version: 16.x
           cache: "pnpm"
 
-      - run: pnpm install --frozen-lockfile
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build the package
+        run: pnpm run ci
+
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm run release
+          commit: "chore(release): version packages"
+          title: "chore(release): version packages"
+          version: node .github/changeset-version.js
+          publish: npx changeset publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

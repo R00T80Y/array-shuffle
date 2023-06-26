@@ -1,5 +1,12 @@
 # @r00t80y/array-shuffle
 
+## 0.0.6
+
+### Patch Changes
+
+- 8bc6779: fix actions
+- 2d32c80: Fix actions
+
 ## 0.0.5
 
 ### Patch Changes

@@ -8,5 +8,9 @@
     "base.json",
     "library.json"
   ],
-  "main": "base.json"
+  "main": "base.json",
+  "publishConfig": {
+    "access": "public",
+    "updateInternalDependencies": "patch"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "private": false,
+  "private": true,
   "name": "@r00t80y/monorepo",
   "description": "Array shuffle",
   "author": "nnu17ip1y <nnu17ip1y@yahoo.com> (https://github.com/R00T80Y)",
@@ -9,9 +9,6 @@
     "array",
     "shuffle"
   ],
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
   "workspaces": [
     "packages/**"
   ],

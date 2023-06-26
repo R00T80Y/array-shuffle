@@ -1,5 +1,11 @@
 # @r00t80y/array-shuffle
 
+## 0.0.7
+
+### Patch Changes
+
+- 8c78622: try / npm dist folder
+
 ## 0.0.6
 
 ### Patch Changes

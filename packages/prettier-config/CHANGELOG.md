@@ -1,5 +1,11 @@
 # @repo/prettier-config
 
+## 1.0.1
+
+### Patch Changes
+
+- 266e503: Remove unused sort plugin
+
 ## 1.0.0
 
 ### Major Changes

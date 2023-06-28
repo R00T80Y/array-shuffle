@@ -1,5 +1,11 @@
 # @repo/typescript-config
 
+## 0.1.1
+
+### Patch Changes
+
+- 266e503: Add publishConfig
+
 ## 0.1.0
 
 ### Minor Changes

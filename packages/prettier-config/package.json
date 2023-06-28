@@ -13,11 +13,6 @@
     "updateInternalDependencies": "patch"
   },
   "peerDependencies": {
-    "prettier": ">=2.8.3",
-    "@ianvs/prettier-plugin-sort-imports": ">=3.7.1"
-  },
-  "devDependencies": {
-    "prettier": ">=2.8.3",
-    "@ianvs/prettier-plugin-sort-imports": ">=3.7.1"
+    "prettier": "^2.8.3"
   }
 }

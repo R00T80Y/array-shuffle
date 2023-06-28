@@ -1,42 +1,27 @@
-// @ts-check
-
-/** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 module.exports = {
-  useTabs: false,
-  tabWidth: 2,
-  printWidth: 80,
-  trailingComma: 'es5',
+  editorconfig: true,
+  // useTabs: false,
+  // tabWidth: 2,
+  // printWidth: 80,
+  // endOfLine: 'lf',
+
   semi: true,
   singleQuote: true,
-  endOfLine: 'lf',
-  bracketSameLine: false,
   quoteProps: 'preserve',
+
+  trailingComma: 'es5',
+  bracketSpacing: true,
+  bracketSameLine: false,
+
+  arrowParens: 'always',
+  singleAttributePerLine: true,
+
   overrides: [
     {
-      'files': '*.yml',
-      'options': {
-        'singleQuote': false,
+      files: '*.yml',
+      options: {
+        singleQuote: false,
       },
     },
   ],
-  plugins: [require('@ianvs/prettier-plugin-sort-imports')],
-  importOrder: [
-    '^(react/(.*)$)|^(react$)',
-    '^(next/(.*)$)|^(next$)',
-    '<THIRD_PARTY_MODULES>',
-    '',
-    '^types$',
-    '^@/config/(.*)$',
-    '^@/lib/(.*)$',
-    '^@/components/(.*)$',
-    '^@/ui/(.*)$',
-    '^@/styles/(.*)$',
-    '^[./]',
-  ],
-  importOrderSeparation: false,
-  importOrderSortSpecifiers: true,
-  importOrderBuiltinModulesToTop: true,
-  importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
-  importOrderMergeDuplicateImports: true,
-  importOrderCombineTypeAndValueImports: true,
 };

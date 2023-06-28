@@ -1,4 +1,4 @@
 // @ts-check
 module.exports = {
-  ...require('@repo/prettier-config'),
+  ...require('@r00t80y/prettier-config'),
 };
